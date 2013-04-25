@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="TweetNotifier.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TweetNotifier"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF6E9ACF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="131*"/>
+            <RowDefinition Height="637*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="1215*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" Text="Chirpyfier" VerticalAlignment="Top" Height="61" Width="454" FontSize="48"/>
+
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="55" Width="321" Click="LoginButton_Click" Grid.Row="1" FontSize="22" Grid.Column="1"/>
+        <TextBlock x:Name="AuthStatusText" Grid.Column="1" Margin="351,25,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="40"/>
+        <Button x:Name="RegisterBackgroundTaskButton" Content="Register Background Task" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="55" Width="321" Click="RegisterBackgroundTask_Click" Grid.Row="1" FontSize="22" Grid.Column="1"/>
+        <TextBlock x:Name="RegisterStatusText" Grid.Column="1" Margin="351,85,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="40"/>
+        <TextBlock x:Name="StatusText" Grid.Column="1" Margin="10,130,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="40"/>
+
+    </Grid>
+</Page>
